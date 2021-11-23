@@ -4,6 +4,9 @@ if (!requireNamespace("BiocManager"))
 
 BiocManager::install()
 
+# Install monocle
+BiocManager::install(c("monocle"))
+
 # First install a few more dependencies
 BiocManager::install(c('DelayedArray', 'DelayedMatrixStats', 'org.Hs.eg.db', 'org.Mm.eg.db'))
 
