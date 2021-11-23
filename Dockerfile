@@ -6,3 +6,6 @@ RUN Rscript -e "install.packages('ggplot2', repos='http://cran.us.r-project.org'
     Rscript -e "install.packages('mclust', repos='http://cran.us.r-project.org')" && \
     Rscript -e "install.packages('dplyr', repos='http://cran.us.r-project.org')" && \
     Rscript -e "install.packages('jsonlite', repos='http://cran.us.r-project.org')"
+
+ADD install.R /usr/local/bin/
+RUN Rscript /usr/local/bin/install.R
