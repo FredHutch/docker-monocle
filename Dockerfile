@@ -1,4 +1,4 @@
-FROM biocontainers/r-monocle3:1.0.0--r41h7d875b9_1
+FROM quay.io/biocontainers/r-monocle3:1.0.0--r41h7d875b9_1
 
 RUN Rscript -e "install.packages('ggplot2')" && \
     Rscript -e "install.packages('argparse')" && \
