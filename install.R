@@ -1,6 +1,6 @@
 # First install Bioconductor and Monocle
 if (!requireNamespace("BiocManager"))
-    install.packages("BiocManager")
+    install.packages("BiocManager", repos='http://cran.us.r-project.org')
 
 BiocManager::install()
 
@@ -8,5 +8,5 @@ BiocManager::install()
 BiocManager::install(c('DelayedArray', 'DelayedMatrixStats', 'org.Hs.eg.db', 'org.Mm.eg.db'))
 
 # Now install garnett
-install.packages("devtools")
+install.packages("devtools", repos='http://cran.us.r-project.org')
 devtools::install_github("cole-trapnell-lab/garnett")
