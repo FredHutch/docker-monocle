@@ -13,3 +13,6 @@ BiocManager::install(c('DelayedArray', 'DelayedMatrixStats', 'org.Hs.eg.db', 'or
 # Now install garnett
 install.packages("devtools", repos='http://cran.us.r-project.org')
 devtools::install_github("cole-trapnell-lab/garnett")
+
+# Make sure that it was installed
+library(garnett)
